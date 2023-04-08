@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E77A5ABD29E1C44E00D0861E /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E77A5ABC29E1C44E00D0861E /* Inter-SemiBold.otf */; };
+		E77A5ABF29E1C6E600D0861E /* Georgia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E77A5ABE29E1C6E600D0861E /* Georgia.ttf */; };
+		E77A5AC129E1F2DA00D0861E /* HelveticaNeue.ttc in Resources */ = {isa = PBXBuildFile; fileRef = E77A5AC029E1F2DA00D0861E /* HelveticaNeue.ttc */; };
 		E77E1DA229E1989C006C59D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77E1DA129E1989C006C59D4 /* AppDelegate.swift */; };
 		E77E1DA429E1989C006C59D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77E1DA329E1989C006C59D4 /* SceneDelegate.swift */; };
-		E77E1DA629E1989C006C59D4 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77E1DA529E1989C006C59D4 /* IntroController.swift */; };
+		E77E1DA629E1989C006C59D4 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77E1DA529E1989C006C59D4 /* IntroViewController.swift */; };
 		E77E1DAB29E1989E006C59D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E77E1DAA29E1989E006C59D4 /* Assets.xcassets */; };
 		E77E1DAE29E1989E006C59D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77E1DAC29E1989E006C59D4 /* LaunchScreen.storyboard */; };
+		E77E1DB829E1AD52006C59D4 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77E1DB729E1AD52006C59D4 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E77A5ABC29E1C44E00D0861E /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
+		E77A5ABE29E1C6E600D0861E /* Georgia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Georgia.ttf; sourceTree = "<group>"; };
+		E77A5AC029E1F2DA00D0861E /* HelveticaNeue.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.ttc; sourceTree = "<group>"; };
 		E77E1D9E29E1989C006C59D4 /* Boutique du Pain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Boutique du Pain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E77E1DA129E1989C006C59D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E77E1DA329E1989C006C59D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E77E1DA529E1989C006C59D4 /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
+		E77E1DA529E1989C006C59D4 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		E77E1DAA29E1989E006C59D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E77E1DAD29E1989E006C59D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E77E1DAF29E1989E006C59D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E77E1DB729E1AD52006C59D4 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E77A5ABB29E1C42F00D0861E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E77A5ABC29E1C44E00D0861E /* Inter-SemiBold.otf */,
+				E77A5AC029E1F2DA00D0861E /* HelveticaNeue.ttc */,
+				E77A5ABE29E1C6E600D0861E /* Georgia.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E77E1D9529E1989B006C59D4 = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				E77E1DB529E19924006C59D4 /* Application */,
-				E77E1DA529E1989C006C59D4 /* IntroController.swift */,
+				E77E1DB929E1AD60006C59D4 /* ViewControllers */,
 				E77E1DB629E19982006C59D4 /* SupportingFiles */,
 			);
 			path = "Boutique du Pain";
@@ -73,11 +91,21 @@
 		E77E1DB629E19982006C59D4 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E77A5ABB29E1C42F00D0861E /* Fonts */,
 				E77E1DAA29E1989E006C59D4 /* Assets.xcassets */,
 				E77E1DAC29E1989E006C59D4 /* LaunchScreen.storyboard */,
 				E77E1DAF29E1989E006C59D4 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E77E1DB929E1AD60006C59D4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E77E1DA529E1989C006C59D4 /* IntroViewController.swift */,
+				E77E1DB729E1AD52006C59D4 /* StartViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77E1DAE29E1989E006C59D4 /* LaunchScreen.storyboard in Resources */,
+				E77A5ABF29E1C6E600D0861E /* Georgia.ttf in Resources */,
+				E77A5AC129E1F2DA00D0861E /* HelveticaNeue.ttc in Resources */,
 				E77E1DAB29E1989E006C59D4 /* Assets.xcassets in Resources */,
+				E77A5ABD29E1C44E00D0861E /* Inter-SemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E77E1DA629E1989C006C59D4 /* IntroController.swift in Sources */,
+				E77E1DA629E1989C006C59D4 /* IntroViewController.swift in Sources */,
+				E77E1DB829E1AD52006C59D4 /* StartViewController.swift in Sources */,
 				E77E1DA229E1989C006C59D4 /* AppDelegate.swift in Sources */,
 				E77E1DA429E1989C006C59D4 /* SceneDelegate.swift in Sources */,
 			);
