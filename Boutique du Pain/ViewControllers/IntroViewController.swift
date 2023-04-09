@@ -9,10 +9,23 @@ import UIKit
 
 class IntroViewController: UIViewController {
 
+    private lazy var BoutiqueDuPainIcon: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "BoutiqueDuPainIcon")
+        return imageView
+    }()
+    
     private lazy var LogoIcon: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "LogoIcon")
         return imageView
+    }()
+    
+    private lazy var textLabel: UILabel = {
+        let label = UILabel()
+        label.text = "SINCE 1992"
+        label.font = UIFont(name: "Inter-SemiBold", size: 13)
+        return label
     }()
     
     override func viewDidLoad() {
@@ -24,16 +37,25 @@ class IntroViewController: UIViewController {
     }
     
     private func addViews() {
+        view.addSubview(BoutiqueDuPainIcon)
         view.addSubview(LogoIcon)
+        LogoIcon.addSubview(textLabel)
     }
     
     private func addConstraints() {
+        BoutiqueDuPainIcon.translatesAutoresizingMaskIntoConstraints = false
         LogoIcon.translatesAutoresizingMaskIntoConstraints = false
+        textLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
+            BoutiqueDuPainIcon.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            BoutiqueDuPainIcon.topAnchor.constraint(equalTo: view.topAnchor, constant: 347),
+            
+            LogoIcon.topAnchor.constraint(equalTo: BoutiqueDuPainIcon.bottomAnchor, constant: 10),
             LogoIcon.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            LogoIcon.topAnchor.constraint(equalTo: view.topAnchor, constant: 347),
-            LogoIcon.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 82),
+            
+            textLabel.centerXAnchor.constraint(equalTo: LogoIcon.centerXAnchor),
+            textLabel.centerYAnchor.constraint(equalTo: LogoIcon.centerYAnchor)
             
         ])
     }
