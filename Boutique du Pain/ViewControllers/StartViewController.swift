@@ -78,7 +78,7 @@ class StartViewController: UIViewController {
         NSLayoutConstraint.activate([
             
             breadIcon.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            breadIcon.topAnchor.constraint(equalTo: view.topAnchor, constant: 90),
+            breadIcon.topAnchor.constraint(equalTo: view.topAnchor, constant: 110),
             breadIcon.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 33),
             
             textLabelBlack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -92,10 +92,10 @@ class StartViewController: UIViewController {
             blackView.widthAnchor.constraint(equalToConstant: 241),
             blackView.heightAnchor.constraint(equalToConstant: 40),
             blackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            blackView.topAnchor.constraint(equalTo: textLabelGray.bottomAnchor, constant: 36),
+            blackView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: -110),
             blackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 85),
             
-            textLabelContinue.topAnchor.constraint(equalTo: blackView.topAnchor, constant: 13),
+            textLabelContinue.topAnchor.constraint(equalTo: blackView.topAnchor, constant: 11),
             textLabelContinue.leftAnchor.constraint(equalTo: blackView.leftAnchor, constant: 55),
         ])
     }
